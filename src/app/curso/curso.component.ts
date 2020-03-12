@@ -19,7 +19,13 @@ export class CursoComponent implements OnInit {
   }
   
   pesquisar(){
-    alert(this.cursoServico.pesquisar());
+
+    this.cursoServico.pesquisar(this.curso.nome).subscribe(
+      retorno => {
+        console.log(retorno);
+      }
+    );
+
   }
    
 }

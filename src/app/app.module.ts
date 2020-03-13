@@ -9,13 +9,15 @@ import { LayoutComponent } from './layout/layout.component';
 import { FormsModule } from '@angular/forms';
 import { CursoService } from './curso/servico/curso.service';
 import { HttpClientModule } from '@angular/common/http';
+import { CursomanterComponent } from './curso/cursomanter/cursomanter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CursoComponent,
-    LayoutComponent
+    LayoutComponent,
+    CursomanterComponent
   ],
   imports: [
     BrowserModule,
